@@ -1,0 +1,20 @@
+programa
+{
+	
+	funcao inicio()
+	{
+	cadeia senha
+
+  	 faca {
+    	 escreva("Digite a senha: ")
+      leia(senha)
+
+      	se (senha == "12345" ou senha == "admin" ou senha == "senha" ou senha == "xuxa"){
+     		escreva("Senha insegura. Tente novamente.\n")
+   		  }
+   	 }
+   		enquanto (senha == "12345" ou senha == "admin" ou senha == "senha" ou senha == "xuxa")
+
+   	 		escreva("Senha válida.\n")
+  }
+}

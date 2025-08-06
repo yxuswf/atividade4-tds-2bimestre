@@ -10,7 +10,7 @@ programa
         se(nota < 0 ou nota > 10){
         	escreva("Informe uma nota válida!")
         }
-        se(nota <= 10)
+        senao se(nota <= 10)
         	escreva("Agradecemos pela sua nota!")
     }
 }

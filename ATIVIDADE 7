@@ -3,14 +3,17 @@ programa
     funcao inicio()
     {
         inteiro nota
-
+        
+	faca{
         escreva("Informe uma nota entre 0 e 10: ")
         leia(nota)
-
+        
         se(nota < 0 ou nota > 10){
-        	escreva("Informe uma nota válida!")
+        	escreva("Nota inválida! \n")
         }
-        senao se(nota <= 10)
+	}
+        enquanto(nota < 0 ou nota > 10)
+        
         	escreva("Agradecemos pela sua nota!")
     }
 }

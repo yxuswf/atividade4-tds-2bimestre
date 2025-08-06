@@ -1,0 +1,25 @@
+programa
+{
+    funcao inicio()
+    {
+        inteiro n1, n2, i
+        
+        escreva("Digite o primeiro número inteiro: ")
+        leia(n1)
+        
+        escreva("Digite o segundo número inteiro: ")
+        leia(n2)
+
+        se (n1 < n2){
+            para (i = n1++ ; i < n2; i++)
+            	escreva(i, "\n")
+        }
+        senao se (n2 < n1){
+            para (i = n2++ ; i < n1; i++)
+            	escreva(i, "\n")
+        }
+        senao{
+            escreva("Os dois números são iguais.")
+        }
+    }
+}

@@ -1,0 +1,24 @@
+programa
+{
+    funcao inicio()
+    {
+        inteiro termo1 = 0
+        inteiro termo2 = 1
+        inteiro proximo = 0
+
+        escreva(termo1, ", ", termo2)
+
+        enquanto (verdadeiro) {
+            proximo = termo1 + termo2
+            se (proximo > 500) {
+                pare
+            }
+            escreva(", ", proximo)
+
+            termo1 = termo2
+            termo2 = proximo
+        }
+
+        escreva("\nFim da série com valores até maior que 500.\n")
+    }
+}

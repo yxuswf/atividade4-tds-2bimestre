@@ -1,0 +1,31 @@
+programa
+{
+    funcao inicio()
+    {
+        inteiro n, i, proximo
+        inteiro termo1 = 0
+        inteiro termo2 = 1
+
+        escreva("Digite o número de termos da série de Fibonacci: ")
+        leia(n)
+
+        se (n <= 0){
+            escreva("Por favor, insira um número positivo.\n")
+        }
+        se (n == 1){
+            escreva("Série de Fibonacci com ", n, " termo: 0\n")
+        }
+
+        escreva(termo1, ", ", termo2)
+
+        para (i = 3; i <= n; i = i + 1) {
+            proximo = termo1 + termo2
+            escreva(", ", proximo)
+
+            termo1 = termo2
+            termo2 = proximo
+        }
+
+        escreva("\n")
+    }
+}

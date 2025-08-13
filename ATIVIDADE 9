@@ -1,0 +1,34 @@
+programa
+{
+	inclua biblioteca Texto --> t
+	
+	funcao inicio()
+	{
+		cadeia nome
+		inteiro idade
+		real salario
+
+		escreva("Informe seu nome: ")
+		leia(nome)
+		
+		enquanto(t.numero_caracteres(nome) <= 3) { 
+			escreva("Nome inválido! Infome outro nome novamente: ")
+			leia(nome)
+		}	
+				escreva("Agora infome sua idade: ")
+				leia(idade)
+
+				enquanto(idade < 0 ou idade > 150){
+					escreva("Idade inválida, infome sua idade novamente: ")
+					leia(idade)
+		}
+
+					escreva("Infome seu salário: ")
+					leia(salario)
+		
+					enquanto(salario < 0){
+						escreva("Salário inválido! Infome seu salário novamente: ")
+						leia(salario)
+		}
+	}
+}

@@ -5,11 +5,11 @@ programa
         inteiro n, i
         real numero, menor, maior, soma = 0
 
-        escreva("Digite a quantidade de números (N): ")
+        escreva("Digite a quantidade de números (n): ")
         leia(n)
 
         se(n <= 0) {
-            escreva("Por favor, insira um valor positivo para N.\n")
+            escreva("Por favor, insira um valor positivo para n.\n")
         }
 
         escreva("Digite o número 1: ")

@@ -1,0 +1,21 @@
+programa 
+{
+    funcao inicio()
+    {
+        inteiro n, i
+        inteiro fatorial = 1
+
+        escreva("Digite um número inteiro não negativo: ")
+        leia(n)
+
+        se (n < 0){
+            escreva("Número inválido. O fatorial não é definido para números negativos.\n")
+        }
+
+        para (i = 1; i <= n; i = i + 1){
+            fatorial = fatorial * i
+        }
+        
+        escreva(n, "! = ", fatorial, "\n")
+    }
+}

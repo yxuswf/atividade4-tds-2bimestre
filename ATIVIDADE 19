@@ -22,10 +22,10 @@ programa
             escreva("Digite o número ", i, ": ")
             leia(numero)
 
-            se (numero < menor){
+            se(numero < menor){
                 menor = numero
             }
-            se (numero > maior){
+            se(numero > maior){
                 maior = numero
             }
             soma = soma + numero

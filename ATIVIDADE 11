@@ -1,0 +1,52 @@
+programa 
+{
+	funcao inicio()
+	{
+		
+    real populacaoA, populacaoB, taxaA, taxaB
+    inteiro anos = 0
+    cadeia resposta
+
+     escreva("Digite a população inicial do país A: ")
+            leia(populacaoA)
+            enquanto (populacaoA <= 0){
+                escreva("Valor inválido. Digite uma população positiva para o país A: ")
+                leia(populacaoA)
+            }
+            
+            escreva("Digite a população inicial do país B: ")
+            leia(populacaoB)
+            enquanto (populacaoB <= 0){
+                escreva("Valor inválido. Digite uma população positiva para o país B: ")
+                leia(populacaoB)
+            }
+
+            escreva("Digite a taxa de crescimento do país A (em decimal, ex: 0.03): ")
+            leia(taxaA)
+            enquanto (taxaA < 0){
+                escreva("Valor inválido. Digite uma taxa não negativa para o país A: ")
+                leia(taxaA)
+            }
+
+            escreva("Digite a taxa de crescimento do país B (em decimal, ex: 0.015): ")
+            leia(taxaB)
+            enquanto (taxaB < 0){
+                escreva("Valor inválido. Digite uma taxa não negativa para o país B: ")
+                leia(taxaB)
+            }
+
+    enquanto (populacaoA < populacaoB){
+        populacaoA = populacaoA + populacaoA * taxaA
+        populacaoB = populacaoB + populacaoB * taxaB
+        anos = anos + 1
+    }
+    escreva("Serão necessários ", anos, " anos para que a população do país A iguale ou ultrapasse a do país B.")
+
+    	escreva("Deseja repetir a simulação? (s/n): ")
+    	leia(resposta)
+
+	se(resposta == "s" ou resposta == "S"){
+		inicio()
+		}
+	}
+}	
